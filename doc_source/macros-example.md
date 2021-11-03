@@ -194,7 +194,7 @@ public class LambdaFunctionHandler implements RequestHandler<Map<String, Object>
     
     private String iterateAndReplace(final String replacement, final String target, final String fragment) {
     	System.out.println(replacement + " == " + target + " == " + fragment );
-    	if (fragment != null AND_AND fragment.equals(target))
+    	if (fragment != null && fragment.equals(target))
     		return replacement;
     	return fragment;
     }
